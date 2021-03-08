@@ -1,0 +1,56 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+}
+.box + .box {
+  margin-top: 10px;
+}
+.a {
+  margin-left: 50%;
+  transform: translate(-100px, 100px) scale(2) rotate(45deg);
+}
+.b {
+  background-color: blueviolet;
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: .3s;
+}
+.b:hover {
+  width: 200px;
+}
+.c {
+    background-color: brown;
+    transition: all 2s;
+    border-radius: 50%;
+}
+.c:hover {
+    transform: rotateX(180deg);
+    background-color: burlywood;
+}
+
+.d {
+    background-color: chocolate;
+    /* pekar till animationen som skall användas */
+    animation-name: spin;
+    /* animationstid */
+    animation-duration: 2s;
+    /* delay före animationen börjar */
+    animation-delay: 2s;
+    /* hur många ggr körs animation. infinite = oändligt */
+    animation-iteration-count: 2;
+}
+@keyframes spin {   
+    0% {
+        background-color: chocolate;
+        transform: rotate(0);
+     }
+    50% {
+        background-color: royalblue;
+     }
+     100% {
+         background-color: chocolate;
+         transform: rotate(360deg);
+      }
+}
