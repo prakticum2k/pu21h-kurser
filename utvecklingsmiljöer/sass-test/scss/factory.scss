@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+#control-panel {
+  width: 300px;
+  padding: 1em;
+  background-color: #ccc;
+  text-align: center;
+  h1 {
+    font-family: Arial;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #666;
+  }
+  button {
+    background-color: #44c767;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    &:hover {
+      background-color: #5cbf2a;
+    }
+  }
+}
+#factory-frame {
+  width: 600px;
+  border: 5px solid #000;
+
+  #cloud-right {
+    opacity: 0.75;
+    -webkit-animation: move 30s linear infinite;
+    -moz-animation: move 30s linear infinite;
+    -o-animation: move 30s linear infinite;
+    animation: move 30s linear infinite;
+  }
+  #cloud-left,
+  #cloud-center {
+    opacity: 0.75;
+    -webkit-animation: move 25s linear infinite;
+    -moz-animation: move 25s linear infinite;
+    -o-animation: move 25s linear infinite;
+    animation: move 25s linear infinite;
+  }
+
+  @-webkit-keyframes move {
+    from {
+      -webkit-transform: translateX(-2000px);
+    }
+    to {
+      -webkit-transform: translateX(2000px);
+    }
+  }
+
+  &.run-factory {
+    .st10 {
+      stroke-dasharray: 800;
+      stroke-dashoffset: 800;
+      animation: dash 4s linear forwards;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    #container-2-rect {
+      animation: shake 0.82s 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      perspective: 1000px;
+    }
+
+    @keyframes shake {
+      10%,
+      90% {
+        transform: translate3d(0, -1px, 0);
+      }
+      20%,
+      80% {
+        transform: translate3d(0, 1px, 0);
+      }
+      30%,
+      50%,
+      70% {
+        transform: translate3d(0, -3px, 0);
+      }
+      40%,
+      60% {
+        transform: translate3d(0, 3px, 0);
+      }
+    }
+
+    .st15 {
+      animation: col 3s 5s linear forwards;
+    }
+
+    @keyframes col {
+      0%,
+      71% {
+        fill: #000000;
+      }
+      72%,
+      100% {
+        fill: yellow;
+      }
+    }
+    .st16,
+    .st17,
+    .st18 {
+      fill-opacity: 0;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      -webkit-animation: mymove;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      animation-name: fill;
+      animation-duration: 4s;
+    }
+    .st16 {
+      animation-delay: 8s;
+    }
+    .st17 {
+      animation-delay: 7s;
+    }
+    .st18 {
+      animation-delay: 6s;
+    }
+    @keyframes fill {
+      0% {
+        fill-opacity: 0;
+      }
+      50% {
+        fill-opacity: 1;
+      }
+      100% {
+        fill-opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+svg#mail-icon {
+    width: 200px;
+}
+svg#mail-icon #mail {
+    fill: darkblue;
+}
+svg#mail-icon #shadow {
+    fill: lightgrey;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.container > div {
+    text-align: center;
+    background: url(../img/curve-divider.svg) no-repeat bottom center;
+    background-size: 100%;
+}
+div.content-2 {
+    background-color: darkblue;
+}
+
+svg#pcum-logo {
+    width: 300px;
+}
+svg#pcum-logo #logo {
+    fill: orange;
+}
