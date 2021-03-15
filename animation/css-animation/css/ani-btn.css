@@ -1,0 +1,39 @@
+.box, .clickbox {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  background-color: orange;
+  transition: all 1s ease-in;
+}
+.clickbox {
+    top: 200px;
+    left: 0;
+}
+/* animation då man "hovrar" elementet */
+/*
+  .box:hover {
+    width: 300px;
+  }
+  */
+.animate {
+  position: relative;
+  left: 300px;
+  transform: rotate(180deg);
+}
+button.aniBtn {
+  margin: 10px 20px;
+  padding: 5px;
+  background-color: #000;
+  color: white;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+.moveRight {
+    top: 200px;
+    left: 400px;
+}
+.moveDown {
+    left: 400px;
+    top: 300px;
+}
