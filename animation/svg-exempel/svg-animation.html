@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG-animation</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <svg
+      version="1.1"
+      id="mail-container"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 480 480"
+      style="enable-background: new 0 0 480 480"
+      xml:space="preserve"
+    >
+      <path
+        id="mail"
+        class="st0"
+        d="M418.31,365.21H66.79c-6.27,0-11.36-5.09-11.36-11.36V115.45c0-6.27,5.09-11.36,11.36-11.36
+	L242.55,230.3l175.76-126.21c6.27,0,11.36,5.09,11.36,11.36v238.41C429.67,360.13,424.59,365.21,418.31,365.21z"
+      />
+    </svg>
+    <script>
+        //Kollar exakta längden på lementets stroke 
+        var path = document.querySelector('path#mail');
+        var length = path.getTotalLength(); 
+        console.log(length)
+    </script>
+  </body>
+</html>

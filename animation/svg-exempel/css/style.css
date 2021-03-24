@@ -28,3 +28,25 @@ svg#pcum-logo {
 svg#pcum-logo #logo {
     fill: orange;
 }
+
+/* SVG-animering */
+#mail-container {
+    width: 48px;
+}
+svg #mail {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 4;
+    /* stroke-miterlimit: 10; */
+    /*bestämmer hur långa "dashes" är */
+    stroke-dasharray: 1333px;
+    /* hur mycket dashen flyttas fgramåt */
+    stroke-dashoffset: 1333px;
+    animation: dashmove 5s linear forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes dashmove {
+      to {
+        stroke-dashoffset: 0;
+      }
+  }
