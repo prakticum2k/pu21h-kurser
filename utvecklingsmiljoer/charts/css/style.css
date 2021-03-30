@@ -7,3 +7,14 @@
     width: 800px;
     height: 450px;  
 }
+.container{ 
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+#pie-chart {
+    display: block;
+    width: 600px;
+    height: 400px;
+
+}

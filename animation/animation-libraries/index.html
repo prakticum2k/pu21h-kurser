@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations libraries</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="s1">
+        <h1 class="animate__animated animate__bounce animate__delay-3s animate__repeat-2">Section 1</h1>
+        <p><a href="#s4">hoppa till section 4</a></p>
+    </section>
+    <section id="s2">
+        <h1 
+        data-aos="zoom-in-right" 
+        data-aos-duration="3000"
+        >
+        section 2</h1>
+    </section>
+    <section id="s3">
+        <h1>section 3</h1>
+        <div 
+            class="box"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+        >
+            cool
+        </div>
+    </section>
+    <section id="s4">
+        <h1>section 4</h1>
+        
+        <p><a href="#s1">up^</a></p>
+    </section>
+    <!-- AOS javascript-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        //initialisera AOS (efter själva aos.js^)
+        AOS.init();
+      </script>
+</body>
+</html>
