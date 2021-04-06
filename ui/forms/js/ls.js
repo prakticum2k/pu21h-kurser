@@ -28,6 +28,7 @@ console.log(localStorage.getItem('greet'))
 if(localStorage.getItem('greet') !== null){
     document.getElementById('greet').value = localStorage.getItem('greet')
     document.getElementById('lsEmail').value = localStorage.getItem('lsEmail')
+    document.getElementById('output').innerHTML = 'LocalStorage i bruk'
 } else {
     document.getElementById('output').innerHTML = 'Standard greeting here'
 }
