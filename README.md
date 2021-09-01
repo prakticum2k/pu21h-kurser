@@ -1,5 +1,5 @@
-# pu20h-kurser
-Exempel och övningar för PU20H
+# pu21h-kurser
+Exempel och övningar för PU21H
 
 ### Klona denna repo för att få exempel på din dator
 
